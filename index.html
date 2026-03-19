@@ -8,7 +8,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Inter', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
-
   .hero {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     border-bottom: 3px solid #2563eb;
@@ -17,7 +16,6 @@
   .hero h1 { font-size: 1.75rem; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 0.5rem; }
   .hero h1 em { font-style: normal; color: #f59e0b; }
   .hero p { color: #94a3b8; font-size: 0.88rem; max-width: 580px; margin: 0 auto; line-height: 1.5; }
-
   .tab-bar {
     display: flex; justify-content: center; gap: 0.2rem;
     background: #1e293b; padding: 0.5rem 0.5rem;
@@ -32,12 +30,10 @@
   }
   .tab:hover { color: #e2e8f0; background: #334155; }
   .tab.active { color: #f59e0b; background: #334155; }
-
   .content { max-width: 760px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
   .panel { display: none; animation: fadeIn 0.3s ease; }
   .panel.active { display: block; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-
   /* DT cards */
   .dt-card {
     background: #1e293b; border: 1px solid #334155; border-radius: 14px;
@@ -63,14 +59,12 @@
   }
   .dt-btn:hover { border-color: #f59e0b; color: #f59e0b; background: rgba(245,158,11,0.08); }
   .dt-btn:active { transform: scale(0.97); }
-
   /* Breadcrumbs */
   .bc-trail { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 1rem; font-size: 0.7rem; }
   .bc-chip { background: #334155; color: #94a3b8; padding: 0.18rem 0.55rem; border-radius: 5px; cursor: pointer; transition: all 0.15s; }
   .bc-chip:hover { background: #475569; color: #e2e8f0; }
   .bc-arrow { color: #475569; line-height: 1.6; }
   .bc-current { background: #f59e0b; color: #0f172a; padding: 0.18rem 0.55rem; border-radius: 5px; font-weight: 600; }
-
   /* Outcomes */
   .outcome-card { border-left: 5px solid; border-radius: 14px; padding: 1.75rem 2rem; margin-bottom: 1rem; animation: fadeIn 0.35s ease; }
   .outcome-card.red { border-color: #ef4444; background: rgba(239,68,68,0.08); }
@@ -84,7 +78,6 @@
   .outcome-card p { font-size: 0.85rem; line-height: 1.6; color: #94a3b8; }
   .outcome-card ul { margin: 0.6rem 0 0 1.2rem; font-size: 0.85rem; line-height: 1.65; color: #94a3b8; }
   .outcome-card li { margin-bottom: 0.15rem; }
-
   /* Escalation box inside outcomes */
   .esc-box {
     margin-top: 1rem; padding: 0.85rem 1rem; border-radius: 8px;
@@ -93,7 +86,6 @@
   .esc-box-title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #60a5fa; margin-bottom: 0.4rem; }
   .esc-box p, .esc-box ul { font-size: 0.82rem; color: #93c5fd; line-height: 1.55; }
   .esc-box ul { margin: 0.3rem 0 0 1.1rem; }
-
   .restart-btn {
     margin-top: 1.25rem; padding: 0.55rem 1.1rem; border-radius: 8px;
     border: 2px solid #334155; background: transparent; color: #cbd5e1;
@@ -101,7 +93,6 @@
     cursor: pointer; transition: all 0.2s;
   }
   .restart-btn:hover { border-color: #f59e0b; color: #f59e0b; }
-
   /* Tables */
   .section-title { font-size: 1.1rem; font-weight: 700; color: #f1f5f9; margin-bottom: 0.75rem; }
   .section-sub { font-size: 0.83rem; color: #94a3b8; margin: -0.35rem 0 1rem; line-height: 1.5; }
@@ -115,7 +106,6 @@
   .tag-red { background: rgba(239,68,68,0.15); color: #f87171; }
   .tag-amber { background: rgba(245,158,11,0.15); color: #fbbf24; }
   .tag-green { background: rgba(34,197,94,0.15); color: #4ade80; }
-
   /* Escalation flow panel */
   .flow-card {
     background: #1e293b; border: 1px solid #334155; border-radius: 14px;
@@ -130,7 +120,6 @@
   .flow-card ul { margin: 0.4rem 0 0 1.2rem; font-size: 0.85rem; line-height: 1.65; color: #94a3b8; }
   .flow-card li { margin-bottom: 0.15rem; }
   .flow-connector { text-align: center; color: #334155; font-size: 1.2rem; margin: -0.25rem 0; }
-
   /* Pro tip */
   .protip { background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.25); border-radius: 12px; padding: 1.4rem 1.6rem; margin-bottom: 1rem; }
   .protip-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #f59e0b; margin-bottom: 0.5rem; }
@@ -138,31 +127,25 @@
   .protip p { font-size: 0.85rem; color: #94a3b8; line-height: 1.6; }
   .protip .rule { margin-top: 0.65rem; padding: 0.7rem 0.9rem; background: rgba(245,158,11,0.08); border-radius: 8px; font-size: 0.83rem; color: #cbd5e1; line-height: 1.55; }
   .protip .rule strong { color: #fbbf24; }
-
   .disclaimer { margin-top: 2rem; padding: 1rem 1.25rem; border: 1px solid #334155; border-radius: 10px; font-size: 0.73rem; color: #64748b; line-height: 1.55; text-align: center; }
 </style>
 </head>
 <body>
-
 <div class="hero">
   <h1>Workplace Injury <em>Triage Protocol</em></h1>
   <p>Comprehensive decision tree with specialized slip, trip &amp; fall pathways, escalation procedures, and reporting timelines.</p>
 </div>
-
 <div class="tab-bar">
   <button class="tab active" data-tab="tree">Decision Tree</button>
   <button class="tab" data-tab="cheat">Quick Reference</button>
   <button class="tab" data-tab="escalation">Escalation &amp; Reporting</button>
   <button class="tab" data-tab="tips">Pro Tips</button>
 </div>
-
 <div class="content">
-
   <!-- PANEL: DECISION TREE -->
   <div class="panel active" id="panel-tree">
     <div id="dt-content"></div>
   </div>
-
   <!-- PANEL: CHEAT SHEET -->
   <div class="panel" id="panel-cheat">
     <p class="section-title">Slip, Trip &amp; Fall &#8212; Quick Reference</p>
@@ -178,7 +161,6 @@
       </tbody>
     </table>
     </div>
-
     <p class="section-title">General Workplace Injuries &#8212; Quick Reference</p>
     <div class="table-scroll">
     <table class="cheat-table">
@@ -196,7 +178,6 @@
       </tbody>
     </table>
     </div>
-
     <p class="section-title">Heat-Related Illness &#8212; Quick Reference</p>
     <div class="table-scroll">
     <table class="cheat-table">
@@ -210,7 +191,6 @@
       </tbody>
     </table>
     </div>
-
     <p class="section-title">Cold-Related Illness &#8212; Quick Reference</p>
     <div class="table-scroll">
     <table class="cheat-table">
@@ -226,12 +206,10 @@
     </table>
     </div>
   </div>
-
   <!-- PANEL: ESCALATION & REPORTING -->
   <div class="panel" id="panel-escalation">
     <p class="section-title">Incident Escalation &amp; Reporting Timeline</p>
     <p class="section-sub">A safety incident includes: Injury, Near Miss, Vehicle Accident, or Personal Medical Event. Adapt timelines to your organization&#8217;s policies.</p>
-
     <div class="flow-card">
       <span class="time-badge">Immediate &#8212; At the Scene</span>
       <h3>1. Immediate Response</h3>
@@ -265,8 +243,27 @@
     </div>
     <div class="flow-connector">&#9660;</div>
     <div class="flow-card">
+      <span class="time-badge">Within 2 Hours</span>
+      <h3>4. Customer EHS Safety Incident Report Email</h3>
+      <ul>
+        <li>Download, prepare, and send the <strong>EHS Safety Incident Report Email Template</strong>.</li>
+        <li>Fill in all required fields: <strong>Site, Event Occurrence Time, Security Notification Time, Team Involved, Employer of Worker, Description of Incident, Severity of Incident, Emergency Services Called, Treatment Services,</strong> and <strong>Report Written By</strong>.</li>
+        <li>Remove all angle brackets from the template before sending.</li>
+        <li>Add the <strong>site code</strong> to the email subject line.</li>
+      </ul>
+      <div class="esc-box">
+        <div class="esc-box-title">Important Notes</div>
+        <ul>
+          <li>EHS Campus Managers will take ownership of the email reporting process when onsite.</li>
+          <li>Personnel involved in the safety incident <strong>may not</strong> submit this report.</li>
+          <li>Reports may only be submitted by <strong>Security Personnel</strong> or <strong>EHS Campus Managers</strong>.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flow-connector">&#9660;</div>
+    <div class="flow-card">
       <span class="time-badge">Within 24 Hours</span>
-      <h3>4. Written Report</h3>
+      <h3>5. Written Report</h3>
       <ul>
         <li>Complete your organization&#8217;s <strong>Incident Report Form</strong> with Root Cause Analysis.</li>
         <li>Complete a <strong>Safety Incident Report</strong> per your organization&#8217;s format.</li>
@@ -276,7 +273,7 @@
     <div class="flow-connector">&#9660;</div>
     <div class="flow-card">
       <span class="time-badge">Within 72 Hours</span>
-      <h3>5. Wrap-Up</h3>
+      <h3>6. Wrap-Up</h3>
       <ul>
         <li>Coordinate a wrap-up meeting with key stakeholders (EHS, Management, HR).</li>
         <li>Assign corrective actions with owners and due dates.</li>
@@ -285,7 +282,7 @@
     <div class="flow-connector">&#9660;</div>
     <div class="flow-card">
       <span class="time-badge">If Medical Attention Required</span>
-      <h3>6. Workers&#8217; Compensation</h3>
+      <h3>7. Workers&#8217; Compensation</h3>
       <ul>
         <li>Notify HR immediately for workers&#8217; comp processing.</li>
         <li>Ensure the injured employee receives required claim forms.</li>
@@ -296,14 +293,13 @@
       </ul>
     </div>
   </div>
-
   <!-- PANEL: PRO TIPS -->
   <div class="panel" id="panel-tips">
     <div class="protip">
       <div class="protip-label">Slip, Trip &amp; Fall</div>
       <h3>The &#8220;Wait and See&#8221; Danger</h3>
       <p>Adrenaline is a liar. After a fall, an employee might say &#8220;I&#8217;m fine, just embarrassed!&#8221; only to wake up the next morning unable to move their neck or back.</p>
-      <div class="rule"><strong>Supervisor Rule:</strong> If an employee has a significant fall, even if they claim they are fine, mandate <strong>&#8220;Light Duty Only&#8221;</strong> for the remainder of the shift and a <strong>mandatory follow-up call 4 hours later</strong> to check for delayed swelling or stiffness.</div>
+      <div class="rule"><strong>Supervisor Rule:</strong> If an employee has a significant* fall, even if they claim they are fine, <strong>mandate a visit to an Occupational Clinic</strong>. If they exhibit any symptoms listed in the Quick Reference Guides, <strong>transport them to an Occupational Clinic or the ER immediately</strong>. Do not wait. Do not let the employee refuse.<br><br><em>*See the Quick Reference Guides when determining severity.</em></div>
     </div>
     <div class="protip">
       <div class="protip-label">Chemical &amp; Exposure</div>
@@ -326,12 +322,10 @@
       <p>Every incident is a near-miss for something worse. Within 24 hours, conduct a root-cause review. Was there a spill? Loose mat? Poor lighting? A shortcut? Fix the hazard before the next shift. Submit a hazard observation report for any identified hazards.</p>
     </div>
   </div>
-
   <div class="disclaimer">
     <strong>Disclaimer:</strong> This tool is a general guide and does not replace professional medical judgment. When in doubt, always err on the side of higher-level care. Follow your organization&#8217;s emergency action plan and OSHA requirements. Document every incident.
   </div>
 </div>
-
 <script>
 /* Tab switching */
 var tabs = document.querySelectorAll(".tab");
@@ -344,21 +338,23 @@ for (var t = 0; t < tabs.length; t++) {
     document.getElementById("panel-" + this.getAttribute("data-tab")).classList.add("active");
   });
 }
-
 /* Escalation HTML snippet reused in outcomes */
 var escSnippet = '<div class="esc-box"><div class="esc-box-title">Escalation (Within 10 Min)</div><ul>' +
   '<li>Notify your Site Supervisor or on-duty Security.</li>' +
   '<li>Supervisor &#8594; Safety Manager &#8594; Site Leadership (phone).</li>' +
   '<li>Safety Manager &#8594; EHS, HR, and relevant management.</li>' +
   '<li>Share: WHO, WHAT, WHEN, WHERE, WHY.</li>' +
-  '<li>Begin witness statements within 1 hour.</li></ul></div>';
-
+  '<li>Begin witness statements within 1 hour.</li></ul></div>' +
+  '<div class="esc-box" style="margin-top:0.75rem"><div class="esc-box-title">Customer EHS Report Email (Within 2 Hours)</div><ul>' +
+  '<li>Download, prepare, and send the EHS Safety Incident Report Email Template.</li>' +
+  '<li>Fill in all fields: Site, Event Time, Security Notification Time, Team, Employer, Description, Severity, Emergency Services, Treatment, Written By.</li>' +
+  '<li>Remove angle brackets and add site code to subject line.</li>' +
+  '<li><strong>Only</strong> Security Personnel or EHS Campus Managers may submit.</li></ul></div>';
 var escSnippetWC = '<div class="esc-box" style="margin-top:0.75rem"><div class="esc-box-title">Workers&#8217; Comp Reminder</div><ul>' +
   '<li>Notify HR immediately for workers&#8217; comp processing.</li>' +
   '<li>Provide employee with claim forms before leaving site.</li>' +
   '<li>Route to approved Occupational Clinic.</li>' +
   '<li>Submit all workers&#8217; comp paperwork within 24 hours.</li></ul></div>';
-
 /* COMBINED DECISION TREE */
 var tree = {
   start: {
@@ -389,7 +385,6 @@ var tree = {
       { label: "Other (strain, crush, burn, foreign body, etc.)", next: "gen_head" }
     ]
   },
-
   /* FALL PATHWAY */
   fall_head: {
     step: "F1", label: "Fall &#8212; Assess the Landing",
@@ -433,7 +428,6 @@ var tree = {
       { label: "NO &#8212; General soreness, minor scrapes, just shaken up", next: "out_firstaid_fall" }
     ]
   },
-
   /* WOUND PATHWAY */
   gen_wound: {
     step: "W1", label: "Wound Assessment",
@@ -452,7 +446,6 @@ var tree = {
       { label: "NO &#8212; Clean wound, vaccinations current", next: "gen_pain" }
     ]
   },
-
   /* CHEMICAL PATHWAY */
   gen_chemical: {
     step: "C1", label: "Chemical / Biological Exposure",
@@ -473,7 +466,6 @@ var tree = {
       { label: "Mild irritation, small area", next: "out_clinic_exposure" }
     ]
   },
-
   /* THERMAL STRESS PATHWAY */
   thermal_type: {
     step: "T1", label: "Thermal Stress &#8212; Heat or Cold?",
@@ -483,7 +475,6 @@ var tree = {
       { label: "Cold-related illness (cold environment, wet/cold exposure)", next: "cold_severity" }
     ]
   },
-
   /* HEAT PATHWAY */
   heat_severity: {
     step: "H1", label: "Heat Illness &#8212; Severity Check",
@@ -519,7 +510,6 @@ var tree = {
       { label: "NO &#8212; No cramps", next: "out_heat_rash" }
     ]
   },
-
   /* COLD PATHWAY */
   cold_severity: {
     step: "K1", label: "Cold Illness &#8212; Severity Check",
@@ -558,9 +548,7 @@ var tree = {
       { label: "NO &#8212; No trench foot", next: "out_cold_chilblains" }
     ]
   },
-
   /* THERMAL STRESS OUTCOMES */
-
   /* Heat Outcomes */
   out_heat_stroke: {
     type: "outcome", level: "red", icon: "&#128680;",
@@ -627,7 +615,6 @@ var tree = {
     ],
     showEsc: true, showWC: false
   },
-
   /* Cold Outcomes */
   out_cold_hypothermia_severe: {
     type: "outcome", level: "red", icon: "&#128680;",
@@ -707,7 +694,6 @@ var tree = {
     ],
     showEsc: true, showWC: false
   },
-
   /* OTHER PATHWAY */
   gen_head: {
     step: "O1", label: "Other Injury &#8212; Head Check",
@@ -741,7 +727,6 @@ var tree = {
       { label: "NO", next: "out_firstaid_gen" }
     ]
   },
-
   /* OUTCOMES */
   out_call911: {
     type: "outcome", level: "red", icon: "&#128680;",
@@ -916,14 +901,11 @@ var tree = {
     showEsc: true, showWC: false
   }
 };
-
 var dtHistory = [];
-
 function dtRender(nodeId) {
   var node = tree[nodeId];
   var container = document.getElementById("dt-content");
   if (node.type === "outcome") { dtRenderOutcome(node, container); return; }
-
   /* Breadcrumbs */
   var bc = "";
   if (dtHistory.length > 0) {
@@ -935,7 +917,6 @@ function dtRender(nodeId) {
     }
     bc += '<span class="bc-current">Step ' + node.step + '</span></div>';
   }
-
   var ctx = node.context ? '<div class="dt-context">' + node.context + '</div>' : '';
   var html = '<div class="dt-card">' + bc +
     '<div class="dt-step">Step ' + node.step + ' &#8212; ' + node.label + '</div>' +
@@ -946,7 +927,6 @@ function dtRender(nodeId) {
   }
   html += '</div></div>';
   container.innerHTML = html;
-
   /* Button listeners */
   var btns = container.querySelectorAll(".dt-btn");
   for (var k = 0; k < btns.length; k++) {
@@ -956,7 +936,6 @@ function dtRender(nodeId) {
       window.scrollTo({ top: document.querySelector(".tab-bar").offsetTop, behavior: "smooth" });
     });
   }
-
   /* Breadcrumb jump listeners */
   var chips = container.querySelectorAll(".bc-chip");
   for (var c = 0; c < chips.length; c++) {
@@ -969,18 +948,15 @@ function dtRender(nodeId) {
     });
   }
 }
-
 function dtRenderOutcome(node, container) {
   var actionsHtml = "<ul>";
   for (var i = 0; i < node.actions.length; i++) {
     actionsHtml += "<li>" + node.actions[i] + "</li>";
   }
   actionsHtml += "</ul>";
-
   var extras = "";
   if (node.showEsc) extras += escSnippet;
   if (node.showWC) extras += escSnippetWC;
-
   container.innerHTML = '<div class="outcome-card ' + node.level + '">' +
     '<div class="outcome-icon">' + node.icon + '</div>' +
     '<h2>' + node.title + '</h2>' +
@@ -989,14 +965,12 @@ function dtRenderOutcome(node, container) {
     '<div class="outcome-actions">' +
     '<button class="restart-btn" id="dtRestart">&#8617; Start Over</button>' +
     '</div></div>';
-
   document.getElementById("dtRestart").addEventListener("click", function() {
     dtHistory = [];
     dtRender("start");
     window.scrollTo({ top: document.querySelector(".tab-bar").offsetTop, behavior: "smooth" });
   });
 }
-
 dtRender("start");
 </script>
 </body>
